@@ -1,0 +1,524 @@
+@charset "utf-8";
+/* CSS Document */
+/*By: David Eddy. Copyright 2010. All Rights Reserved.*/
+
+/*browser reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	padding:0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+html {
+	margin-left: -1px;
+}
+
+/*Notes:*/
+/*unique: #&ID, reused: .&Class*/
+/*padding: inside, margin: outside.*/
+
+/*Background*/
+Body{
+	background-color:#FFFFFF;
+	padding:0px;
+	margin:0px;
+	height:100%;
+}
+
+a.Mainmenu{
+	color:#000000;
+	font-size: 15pt;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:40px;
+	text-decoration:none;
+	}
+	
+a.imglink{
+	padding:0px;
+	margin:0px;
+	border:0px;
+}
+
+.menuitem
+{
+    position:relative;
+    width:110%;
+    height:42px
+}
+
+.bodylink
+{
+    color:#000000;
+	font-size: 12pt;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	}
+	
+/*stock Fonts*/
+font{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12pt;
+	}
+
+h3{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14pt;
+	color:#999;
+}
+
+/*Custom Fonts*/
+#header{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bolder;
+	font-size:24px;
+	margin-left: auto;
+    margin-right: auto;
+	width:90%;
+}
+
+#bodytext{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:bolder;
+	font-size:14px;
+	display:block;
+	line-height:22px;
+}
+
+.blogtitle
+{
+    font-size: 18pt;
+	font-family:Arial, Helvetica, sans-serif;
+	display:block;
+}
+
+.blogPosting
+{
+    font-size:12pt;
+	font-family:Arial, Helvetica, sans-serif;
+	display:block;
+}
+
+.viewComments
+{
+    position:relative;
+    left:140px;
+	color:#999;
+	display:block;
+}
+
+.viewCommentsdisclaim
+{
+    position:relative;
+    left:140px;
+    width:450px;
+    font-size:10pt;
+	color:#999;
+}
+
+
+
+.PermASponsorText{
+	color:#333;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bolder;
+	font-size:24px;
+}
+
+	.advertText{
+	display:block;
+	position:relative;
+	bottom:-42px;
+    left: 0px;
+}
+
+/*Layout*/
+.wrapper {
+	background-image:url(../interface/bottm_right.png);
+	background-color:#999;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	position:relative;
+	width:975px;
+	margin:0 auto;
+    overflow:hidden;
+}
+
+#HeaderContainer{
+	background-color:#FFF;
+	position:relative;
+	width:935px;
+	height:290px;
+	top:15px;
+	right:-20px;
+	padding-bottom:10px;
+}
+
+#TopLeftLogo{
+	z-index: 100;
+	position:absolute;
+	
+}
+
+#HeaderImage{
+	position:relative;
+	right:-250px;
+	float:none;
+	width:525px;
+	height:300;
+	overflow:hidden;
+	float:left;
+}
+
+#MainMenu{
+	background-color:#FFFFFF;
+	position:relative;
+	left:-7px;
+	width:170px;
+	height:250px;
+	float:right;
+	padding: 5px 10px 35px 0px;
+}
+
+/*BodyArea*/
+#bodyConatiner{
+	width:935px;
+	position:relative;
+	margin-top:30px;
+	margin-right:30px;
+	margin-left:20px;
+	top:-20px;
+}
+
+#bodyContent
+{
+	background-color:#E6E6E5;
+	float:left;
+	min-height:300px;
+	display: block;
+	width:700px;		
+	top:-25px;
+	padding-top:35px;
+	padding-right:20px;
+	padding-left:20px;
+}
+
+#bodySide{
+	background-image:url(../interface/bodySideBKGTop.png);
+	background-repeat:no-repeat;
+	background-position:top;
+	min-height:100px;
+	float:right;
+	height:100%;
+	width:157px;
+	text-align: center;
+	position:relative;
+	top:5px;
+	padding-top:100px;
+	padding-left:30px;
+}
+
+#socialmediabox{
+	margin:20px;
+	width:700px;
+	position:relative;
+	left:-20px;
+	min-height:50px;
+	overflow:visible;
+}
+
+/*drop shadow when available*/
+
+.img-shadow {
+  float:left;
+  background: url(../interface/shadowAlpha.png) no-repeat bottom right !important;
+  background: url(../interface/shadow.gif) no-repeat bottom right;
+  margin: 10px 0 0 10px !important;
+  margin: 10px 0 0 5px;
+  }
+
+.img-shadow img {
+  display: block;
+  position: relative;
+  margin: -6px 6px 6px -6px;
+  } 
+
+/*Social Media Items*/
+.socialMediaButtons{
+	padding-left:16px;
+	padding-right:16px;
+}
+
+#BodyCopy{
+}
+
+#upcommingbody{
+	background-color:#ffffff;
+	position:relative;
+	left:-20px;
+	border-bottom-width:thin;
+	border-bottom-style:dashed;
+	border-color:#F00;
+	padding:10px;
+	min-height:120px;
+	width:720px;
+	border-top-width:thin;
+	border-top-style:dashed;
+	border-color:#F00;
+}
+
+#upCommingImage{
+	    float: left; 
+		padding:10px;
+}
+
+/*Blog Styles*/
+#blog1{
+	background-color:#e7e8e7;
+	position:relative;
+	left:-20px;
+	padding:10px;
+	min-height:120px;
+	width:720px;
+	
+	/*border stuff*/
+	border-color:#F00;
+	border-top-width:thin;
+	border-top-style:dashed;
+	border-bottom-width:thin;
+	border-bottom-style:dashed;
+}
+
+#blog2{
+	background-color:#ffffff;
+	position:relative;
+	left:-20px;
+	padding:10px;
+	min-height:120px;
+	width:720px;
+	
+	/*border stuff*/
+	border-color:#F00;
+	border-top-width:thin;
+	border-top-style:dashed;
+	border-bottom-width:thin;
+	border-bottom-style:dashed;
+}
+
+.dateimage{
+	background-image:url(../interface/dateFlag.png);
+	background-position: center;
+	background-repeat:no-repeat;
+	position:relative;
+	float:left;
+	left:-20px;
+	height:70px;
+	width:100px;
+	text-align:center;
+	padding-top:30px;
+	padding-right:40px;
+}
+
+.datefont
+{
+    position:relative;
+    top:5px;
+	color:#F00;
+}
+
+/*Bottom Perma Sponsors*/
+#permSponsors{
+	position:relative;
+	width:100%;
+	padding-top:20px;
+	padding-left:10px;
+}
+
+.permSponsorImage{
+	padding-top:5ps;
+	padding-right:40px;
+	padding-bottom:5px;
+	padding-left:50px;
+}
+
+/*Social Media Styling*/
+#socialMediaButtons{
+	float:left;
+}
+
+#socialMediaButtons font{
+	padding-left:20px;
+	font-weight:bolder
+}
+
+/*Newsletter*/
+#Newsletter{
+	float:right;
+	height:32px;
+}
+
+#Newsletter font{
+	padding-right:30px;
+}
+
+#Newsletter a{
+	font-weight:900;
+	text-decoration:underline;
+	color:#000;
+}
+
+/*Slider styles*/
+.commentbttnClear
+{
+    color:White;
+    font-weight:bolder;
+    background-color:Red;
+}
+
+.commentbttnSubmit
+{
+    color:White;
+    font-weight:bolder;
+    background-color:Green;
+}
+
+#blogpost1div
+{
+    position:relative;
+    left:145px;
+    top:10px;
+    background: #FFF;
+    width: 565px;
+    display:none;
+    overflow:visible;
+    padding:10px;
+}
+
+#blogpost2div
+{
+    position:relative;
+    left:145px;
+    top:10px;
+    background: #e7e8e7;
+    width: 565px;
+    display:none;
+    overflow:visible;
+    padding:10px;
+}
+
+/*CommentStyles*/
+.commentHeader
+{
+    display:block;
+    text-decoration: underline;
+    padding-top:15px;
+    padding-bottom:5px;
+    color:#666;
+    font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:12pt;
+	width:auto;
+}
+
+.commentBody
+{
+    display:block;
+    color:#999;
+    font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:10pt;
+}
+
+.viewComment1txtbox
+{
+    background-color:#e7e8e7;
+    display:block;
+    width:563px;
+    border-width:1px;
+    border-style:solid;
+    border-color:#666;
+}
+
+.viewComment2txtbox
+{
+    background-color:#FFF;
+    display:block;
+    width:563px;
+    border-width:1px;
+    border-style:solid;
+    border-color:#666;
+}
+
+/*Page Footer*/
+#Footer{
+	background-image:url(../interface/bottom_footer.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	width:100%;
+	min-height:140px;
+	position:relative;
+	top:20px;
+}
+
+.copyright{
+	padding-top:60px;
+	padding-bottom:20px;
+	margin-left:70px;
+	width:30%;
+	text-align:center;
+}
+
+#Footer .copyrightLink{
+	font:Arial, Helvetica, sans-serif;
+	color:#000;
+	display:block;
+	font-size:10pt;
+	text-decoration:underline;
+}
+
+#Footer .copyrighttext{
+	font:Arial, Helvetica, sans-serif;
+	color:#000;
+	display:block;
+	font-size:10pt;
+}
+
+#Footer #copyrightLinkList{
+	width:100%;
+	vertical-align:bottom;
+	text-align:center;
+}
+
+#Footer #copyrightLinkList .copyrightMenu{
+	font:Arial, Helvetica, sans-serif;
+	color:#000;
+	display:inline;
+	font-size:10pt;
+	text-decoration:underline;
+}

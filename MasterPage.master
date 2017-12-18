@@ -1,0 +1,209 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Bay Are Women's Softball League</title>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/animatedcollapse.js">
+
+    /***********************************************
+    * Animated Collapsible DIV v2.4- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+    * This notice MUST stay intact for legal use
+    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+    ***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+    animatedcollapse.addDiv('blogpost1div', 'fade=1,height=80px')
+    animatedcollapse.addDiv('blogpost2div', 'fade=1,height=80px')
+    animatedcollapse.ontoggle = function ($, divobj, state) { //fires each time a DIV is expanded/contracted
+        //$: Access to jQuery
+        //divobj: DOM reference to DIV being expanded/ collapsed. Use "divobj.id" to get its ID
+        //state: "block" or "none", depending on state
+    }
+
+    animatedcollapse.init()
+
+</script>
+<script type="text/javascript">
+    animatedcollapse.addDiv('blogpost1div', 'fade=1')
+    animatedcollapse.addDiv('blogpost2div', 'fade=1')
+    //additional addDiv() call...
+    //additional addDiv() call...
+    animatedcollapse.init()
+</script>
+<script type="text/javascript">
+    var $buoop = {}
+    $buoop.ol = window.onload;
+    window.onload = function () {
+        if ($buoop.ol) $buoop.ol();
+        var e = document.createElement("script");
+        e.setAttribute("type", "text/JavaScript");
+        e.setAttribute("src", "http://browser-update.org/update.js");
+        document.body.appendChild(e);
+    }
+
+
+    $("div.menuitem").mouseenter(function () {
+        $(this).css('cursor', 'hand');
+    }).mouseleave(function () {
+        $(this).css('cursor', 'pointer');
+    });
+
+</script> 
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+
+
+
+<link rel="SHORTCUT ICON" href="favicon.ico" />
+
+<asp:ContentPlaceHolder id="ContentPlaceHolder0" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+
+<body>
+
+<div class="wrapper">
+<a href="default.aspx" target="_self"><img id="TopLeftLogo" src="interface/TopLeftLogo.png" alt="Bay Area Weomens Softball League" /></a>
+<div id="HeaderContainer">
+	<img src ="" id="HeaderImage" runat="server" alt="Bay Area Weomens Softball League" style="position:relative;left:215px" />
+
+		<div id="MainMenu">
+            <div class="menuitem">
+                <a class="Mainmenu" href="default.aspx" target="_self" >Home Plate</a><br/>
+            </div>
+            <div class="menuitem">
+			    <a class="Mainmenu" href="aboutus.aspx" target="_self">About the League</a><br/>
+            </div>
+            <div class="menuitem">
+			    <a class="Mainmenu" href="teams.aspx" target="_self">Teams / Sponsors</a><br/>
+            </div>
+            <div class="menuitem">
+			    <a class="Mainmenu" href="http://www.sportsstandings.com/tampasoftball" target="_new">Game Schedule</a><br/>
+            </div>
+            <div class="menuitem">
+			    <a class="Mainmenu" href="special.aspx" target="_self">Special Events</a><br/>
+            </div>
+            <div class="menuitem" >
+			    <a class="Mainmenu" href="http://www.cafepress.com/BayAreaWomen'sSoftballLeague" target="_new">Merchandise</a><br/>
+            </div>
+            <div class="menuitem">
+			    <a class="Mainmenu" href="contact.aspx" target="_self">Contact Us</a><br/>
+            </div>
+		</div>
+	</div>
+	<div id="bodyConatiner">
+        <form id="form1" runat="server">
+		<div id="bodyContent">
+<!--*-->
+<!--Main Content Area-->
+            <div id="BodyCopy" >
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+            </div>
+<!--*-->
+            <div id="upcommingbody" style="position:relative;padding-left:10px">
+<asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+</asp:ContentPlaceHolder>
+            </div>
+
+<!--*-->
+            <div id="blog1" style="position:relative;padding:10px;width:720px">
+<asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+</asp:ContentPlaceHolder>
+            </div>
+
+<!--*-->
+            <div id="blog2" style="position:relative;padding:10px;width:720px">
+<asp:ContentPlaceHolder id="ContentPlaceHolder4" runat="server">
+</asp:ContentPlaceHolder>
+            </div>
+		</div>
+        </form>
+
+
+<!--Side Adverts-->
+        <div id="bodySide">
+<div class="img-shadow">
+            <a href="#" id="alnk1" target="_new" runat="server">
+            <img src="" ID="advert1" runat="server" alt="Advertisment" height="240" width="120" />
+            </a>
+        </div>
+
+        <div class="img-shadow">
+            <a href="#" id="alnk2" target="_new" runat="server">
+            <img src="" ID="advert2" runat="server" alt="Advertisment" height="240" width="120" />
+            </a>
+		</div>
+
+<!--PayPal button-->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="3B7FQUXB4D3V6" />
+            <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" style="position:relative;right:15px" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+
+        </div>
+
+
+    <!--Clear for new styles-->
+    <div style="clear:both;"></div>
+
+    <!--PermAImages-->
+    <div id="permSponsors">
+		<a href="contact.aspx" class="imglink"><img class="permSponsorImage" src="sponsors/PermSponsor1.png" alt="Play!" height="175" width="145" /></a>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="display:inline" >
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="3B7FQUXB4D3V6" />
+        <input type="image" src="sponsors/PermSponsor2.png"   name="submit" class="permSponsorImage"  alt="Sponsor!" />
+    </form>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="display:inline" >
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="3B7FQUXB4D3V6" />
+        <input type="image" src="sponsors/PermSponsor3.png" name="submit" class="permSponsorImage"  alt="Support!" />
+    </form>
+	</div>
+
+
+<!--footer-->
+
+    <div id="Footer">
+      <div class="copyright">
+    	  	<a class="copyrightLink" href="mailto:contact@tampabaysoftball.org" target="_new">contact@tampabaysoftball.org</a>
+	        <font class="copyrighttext" >Copyright © 2010 by tampabaysoftball.org</font>
+        	<a class="copyrightLink" href="Http://ssd.servehttp.com/resumev4/" target="_new">Created by: David (DJ) Eddy</a>
+		</div>
+		<div id="copyrightLinkList">
+        	<a class="copyrightMenu" href="default.aspx" target="_self">home plate</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+            <a class="copyrightMenu" href="aboutus.aspx" target="_self">about the league</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+            <a class="copyrightMenu" href="teams.aspx" target="_self">team & sponsors</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+            <a class="copyrightMenu" href="http://www.sportsstandings.com/tampasoftball" target="_self">game schedule</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+            <a class="copyrightMenu" href="aboutus.aspx" target="_self">special events</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+            <a class="copyrightMenu" href="special.aspx" target="_self">merchandise</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+            <a class="copyrightMenu" href="contact.aspx" target="_self">contact us</a></div>
+		</div>
+	</div>
+
+<!--Menu mouse over script-->
+    <script>
+        $("div.menuitem").mouseenter(function () {
+            $(this).css('cursor', 'pointer');
+            $(this).css('background-image', 'url(interface/menubat.png)');
+            $(this).css('background-position', 'top left');
+            $(this).css('background-repeat', 'no-repeat');
+        }).mouseleave(function () {
+            $(this).css('cursor', 'hand');
+            $(this).css('background-image', 'none');
+        });
+    </script>
+</body>
+</html>

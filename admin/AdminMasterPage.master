@@ -1,0 +1,99 @@
+﻿<%@ Master Language="VB" CodeFile="AdminMasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Bay Are Women's Softball League</title>
+
+<script type="text/javascript">
+    var $buoop = {}
+    $buoop.ol = window.onload;
+    window.onload = function () {
+        if ($buoop.ol) $buoop.ol();
+        var e = document.createElement("script");
+        e.setAttribute("type", "text/javascript");
+        e.setAttribute("src", "http://browser-update.org/update.js");
+        document.body.appendChild(e);
+    } 
+</script>
+
+<link href="../css/main.css" rel="stylesheet" type="text/css" />
+<LINK REL="SHORTCUT ICON" HREF="../favicon.ico">
+
+<asp:ContentPlaceHolder id="ContentPlaceHolder0" runat="server">
+</asp:ContentPlaceHolder>
+</head>
+
+<body>
+<form id="form1" runat="server">
+
+<div class="wrapper">
+<a href="../default.aspx" target="_self"><img id="TopLeftLogo" src="../interface/TopLeftLogo.png" alt="Bay Area Weomens Softball League" /></a>
+<div id="HeaderContainer">
+	<img id="HeaderImage" runat="server" alt="Bay Area Weomens Softball League" style="position:relative;left:230px" />
+		<div id="MainMenu">
+            <a class="Mainmenu" href="../default.aspx" target="_self">Home Plate</a><br/>
+			<a class="Mainmenu" href="../aboutus.aspx" target="_self">About the League</a><br/>
+			<a class="Mainmenu" href="../teams.aspx" target="_self">Teams / Sponsors</a><br/>
+			<a class="Mainmenu" href="http://www.sportsstandings.com/tampasoftball" target="_self">Game Schedule</a><br/>
+			<a class="Mainmenu" href="../special.aspx" target="_self">Special Events</a><br/>
+			<a class="Mainmenu" href="http://www.cafepress.com/BayAreaWomen'sSoftballLeague" target="_new">Merchandise</a><br/>
+			<a class="Mainmenu" href="../contact.aspx" target="_self">Contact Us</a><br/>
+		</div>
+	</div>
+	<div id="bodyConatiner">
+		<div id="bodyContent">
+
+<!--Main Content Area-->
+<!--*-->
+<div id="upcommingbody" style="position:relative;padding-left:10px">
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+</div>
+
+<!--*-->
+<div id="blog1" style="position:relative;padding:10px;width:720px">
+<asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+</asp:ContentPlaceHolder>
+</div>
+
+<!--*-->
+<div id="blog2" style="position:relative;padding:10px;width:720px">
+<asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+</asp:ContentPlaceHolder>
+</div>
+
+<asp:ContentPlaceHolder id="ContentPlaceHolder4" runat="server">
+</asp:ContentPlaceHolder>
+		</div>
+<!--Side Adverts-->
+    <div id="bodySide">
+
+	</div>
+    <!--Clear for new styles-->
+    <div style="clear:both;"></div>
+</div>
+
+<!--footer-->
+<div id="FullFooter">
+    <div id="Footer">
+      <div class="copyright">
+    	  	<a class="copyrightLink" href="mailto:contact@tampabaysoftball.org" target="_new">contact@tampabaysoftball.org</a>
+	        <font class="copyrighttext" >Copyright © 2010 by tampabaysoftball.org</font>
+        	<a class="copyrightLink" href="Http://ssd.servehttp.com/resumev4/" target="_new">Created by: David (DJ) Eddy</a>
+		</div>
+		<div id="copyrightLinkList">
+        	<a class="copyrightMenu" href="../default.aspx" target="_self">home plate</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+            <a class="copyrightMenu" href="../aboutus.aspx" target="_self">about the league</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+            <a class="copyrightMenu" href="../teams.aspx" target="_self">team & sponsors</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+            <a class="copyrightMenu" href="http://www.sportsstandings.com/tampasoftball" target="_self">game schedule</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+            <a class="copyrightMenu" href="../about.aspx" target="_self">special events</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+            <a class="copyrightMenu" href="../special.aspx" target="_self">merchandise</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+            <a class="copyrightMenu" href="../contact.aspx" target="_self">contact us</a></div>
+		</div>
+	</div>
+</div>
+</form></body>
+</html>
